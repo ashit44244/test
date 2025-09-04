@@ -2,106 +2,166 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Birth Certificate - Government of India</title>
+  <title>Birth & Death Registration - Verify Certificate</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f8f9fa;
       margin: 0;
-      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #fff url('https://upload.wikimedia.org/wikipedia/commons/9/99/CRS_watermark.png') repeat;
     }
-    .header {
-      background: #004080;
-      color: white;
-      padding: 15px;
-      text-align: center;
-      font-size: 22px;
-      font-weight: bold;
+    /* Top Banner with Flag Background */
+    .top-banner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: url('flag.svg') repeat-x;
+      padding: 8px 40px;
       position: relative;
     }
-    .header img {
+    .top-banner .left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .top-banner .center {
       position: absolute;
-      left: 20px;
-      top: 10px;
-      height: 50px;
+      left: 50%;
+      transform: translateX(-50%);
     }
+    .top-banner img {
+      height: 60px;
+    }
+    /* Navbar */
+    .navbar {
+      background-color: #0c2d62;
+      color: white;
+      padding: 12px 20px;
+      font-size: 14px;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+    /* Certificate Card */
     .container {
-      background: white;
-      max-width: 850px;
+      max-width: 900px;
       margin: 40px auto;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    }
-    h2 {
-      text-align: center;
-      margin-bottom: 20px;
-      color: #004080;
-      text-transform: uppercase;
+      background: #fff;
+      padding: 20px;
+      border-radius: 4px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 20px;
+      font-size: 15px;
     }
     td {
-      padding: 12px;
       border: 1px solid #ccc;
-      font-size: 16px;
+      padding: 10px;
+      vertical-align: top;
     }
     td.label {
       font-weight: bold;
-      background: #f1f1f1;
       width: 35%;
+      background: #fafafa;
     }
+    /* Footer */
     .footer {
+      background: linear-gradient(to right, #1a4d80, #19767c);
+      color: white;
+      padding: 20px;
       text-align: center;
-      font-size: 14px;
-      color: #666;
-      margin-top: 20px;
+      margin-top: 40px;
+      font-size: 13px;
+    }
+    .footer img {
+      height: 40px;
+      margin: 10px;
     }
   </style>
 </head>
 <body>
-  <div class="header">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Emblem_of_India.svg" alt="India Emblem">
-    Government of India - Birth Certificate Record
+
+  <!-- Top Banner with Repeated Flag Background -->
+  <div class="top-banner">
+    <div class="left">
+      <img src="crs-logo-light.png" alt="CRS Logo">
+      <img src="azadi_logo_light-min.png" alt="Azadi Logo">
+    </div>
+    <div class="center">
+      <img src="emblem.png" alt="India Emblem" style="height:70px;">
+    </div>
   </div>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About CRS</a>
+    <a href="#">RBD Act & Model Rules</a>
+    <a href="#">Circulars</a>
+    <a href="#">Forms</a>
+    <a href="#">FAQs</a>
+  </div>
+
+  <!-- Certificate -->
   <div class="container">
-    <h2>Certificate of Birth</h2>
     <table>
       <tr>
-        <td class="label">Child's Name</td>
+        <td class="label">Registration Number</td>
+        <td>B-2024: 9-91760-004023</td>
+      </tr>
+      <tr>
+        <td class="label">Name</td>
         <td>Adya Gupta</td>
+      </tr>
+      <tr>
+        <td class="label">Gender</td>
+        <td>Female</td>
       </tr>
       <tr>
         <td class="label">Date of Birth</td>
         <td>21/11/2024</td>
       </tr>
       <tr>
+        <td class="label">Name of Mother</td>
+        <td>Samiksha Khandelwal</td>
+      </tr>
+      <tr>
+        <td class="label">Name of Father</td>
+        <td>Ashit Kumar</td>
+      </tr>
+      <tr>
         <td class="label">Place of Birth</td>
         <td>Prayagraj</td>
       </tr>
       <tr>
-        <td class="label">Father's Name</td>
-        <td>Ashit Kumar</td>
-      </tr>
-      <tr>
-        <td class="label">Mother's Name</td>
-        <td>Samiksha Khandelwal</td>
-      </tr>
-      <tr>
-        <td class="label">Registration Number</td>
-        <td>B-2024: 9-91760-004023</td>
-      </tr>
-      <tr>
-        <td class="label">Registration / Issued Date</td>
+        <td class="label">Registration Date</td>
         <td>27/05/2024</td>
       </tr>
+      <tr>
+        <td class="label">Registration Unit</td>
+        <td>Nagar Nigam Zone-3, Prayagraj</td>
+      </tr>
+      <tr>
+        <td class="label">Registration Unit Code</td>
+        <td>91760</td>
+      </tr>
     </table>
-    <div class="footer">
-      This is a digitally generated certificate from the Government Records Portal.
-    </div>
   </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <img src="https://www.mygov.in/sites/all/themes/mygov/images/mygov.png" alt="MyGov">
+    <img src="https://data.gov.in/sites/all/themes/mgov/data_gov_logo.png" alt="Data.gov.in">
+    <img src="https://www.india.gov.in/sites/upload_files/npi/files/logo_1.png" alt="India.gov.in">
+    <p>Website Developed & Maintained by Office of the Registrar General & Census Commissioner, India</p>
+    <p>© 2025 - The Registrar General & Census Commissioner, India</p>
+  </div>
+
 </body>
 </html>
